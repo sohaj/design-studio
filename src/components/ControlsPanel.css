@@ -1,0 +1,234 @@
+.controls-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 24px;
+}
+
+.control-group {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 12px;
+}
+
+.control-chips {
+  display: flex;
+  gap: 6px;
+  padding: 0 16px 4px;
+}
+
+.chip {
+  padding: 6px 14px;
+  border-radius: 100px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.chip.active {
+  background: #21C063;
+  border-color: #21C063;
+  color: #161717;
+  font-weight: 600;
+}
+
+.chip.small {
+  padding: 4px 10px;
+  font-size: 0.72rem;
+}
+
+.anim-hint {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  padding: 0 16px 8px;
+  margin: 0;
+  opacity: 0.7;
+}
+
+/* Animation grid */
+.animation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 0 12px 8px;
+}
+
+.animation-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 6px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.animation-tile:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-hover);
+}
+
+.animation-tile.active {
+  background: rgba(33, 192, 99, 0.08);
+  border-color: rgba(33, 192, 99, 0.35);
+}
+
+.animation-tile-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.animation-tile:hover .animation-tile-icon {
+  color: var(--text-primary);
+}
+
+.animation-tile.active .animation-tile-icon {
+  color: #21C063;
+}
+
+.anim-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.animation-tile-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  line-height: 1;
+}
+
+.animation-tile.active .animation-tile-name {
+  color: #21C063;
+}
+
+.animation-tile:hover .animation-tile-name {
+  color: var(--text-primary);
+}
+
+/* Control rows */
+.control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+}
+
+.control-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Color picker */
+.color-picker-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-input {
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  background: none;
+  padding: 0;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
+}
+
+.color-value {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: 'SF Mono', Monaco, monospace;
+}
+
+/* Toggle */
+.toggle {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  border: none;
+  background: var(--bg-tertiary);
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.toggle.active {
+  background: var(--accent);
+}
+
+.toggle-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s;
+}
+
+.toggle.active .toggle-thumb {
+  transform: translateX(16px);
+}
+
+/* Stepper */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.stepper button {
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.stepper button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+}
+
+.stepper span {
+  font-size: 0.78rem;
+  color: var(--text-primary);
+  min-width: 32px;
+  text-align: center;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}

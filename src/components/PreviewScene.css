@@ -1,0 +1,30 @@
+.preview-scene {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.preview-scene canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.preview-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.preview-empty p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(8px);
+}

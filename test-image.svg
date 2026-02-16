@@ -1,0 +1,5 @@
+<svg width="400" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="800" fill="#6c5ce7"/>
+  <text x="200" y="400" font-family="Arial" font-size="48" fill="white" text-anchor="middle">Test Screen</text>
+  <circle cx="200" cy="500" r="80" fill="white" opacity="0.3"/>
+</svg>
